@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+.login-page {
+  background: #f7f7f7; 
+  min-height: 100vh;
+  padding: 5rem 2rem;
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-page main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.login-page h1 {
+  text-align: center;
+  font-size: 3.8rem;
+  color: #8800FF;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 10px rgba(136, 0, 255, 0.1);
+  letter-spacing: 2px;
+}
+
+.login-page form {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 3rem 4rem;
+  max-width: 850px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(136, 0, 255, 0.15);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.login-page form label {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+
+.login-page form input[type="text"],
+.login-page form input[type="password"],
+.login-page form input[type="number"] {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.login-page form input[type="text"]:focus,
+.login-page form input[type="password"]:focus,
+.login-page form input[type="number"]:focus {
+  outline: none;
+  border-color: #8800FF;
+  box-shadow: 0 0 12px rgba(136, 0, 255, 0.2);
+}
+
+.login-page form input[type="radio"] {
+  margin: 0 10px;
+  transform: scale(1.3);
+  accent-color: #8800FF;
+}
+
+.login-page form input[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  background-color: #8800FF;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(136, 0, 255, 0.3);
+}
+
+.login-page form input[type="submit"]:hover {
+  background-color: white;
+  color: #8800FF;
+  border: 1px solid #8800FF;
+  box-shadow: 0 0 20px rgba(136, 0, 255, 0.3);
+  transform: scale(1.02);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

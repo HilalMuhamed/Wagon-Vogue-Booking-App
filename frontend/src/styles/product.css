@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff; 
+  color: #111;
+  scroll-behavior: smooth;
+}
+
+.product-page {
+  padding: 3rem 2rem;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.product-page h1 {
+  font-size: 4.5rem;
+  text-align: center;
+  color: #8800FF;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 10px rgba(136, 0, 255, 0.1);
+}
+
+.product-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 0 30px rgba(136, 0, 255, 0.2);
+}
+
+.product-image-box {
+  background-color: #0b0b0b;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.product-image-box img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  margin-bottom: 1rem;
+}
+
+.product-image-box .feature {
+  font-size: 1.4rem;
+  color: #ddd;
+  margin-bottom: 0.5rem;
+}
+
+.product-image-box .price {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #8800ff;
+}
+
+.reservation-form {
+  background-color: #0a0a0a;
+  padding: 2rem 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(136, 0, 255, 0.15);
+}
+
+.reservation-form h3 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+.reservation-form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.reservation-form input[type="time"],
+.reservation-form input[type="date"],
+.reservation-form input[type="number"] {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  background-color: #151515;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  transition: 0.3s border, 0.3s box-shadow;
+}
+
+.reservation-form input:focus {
+  outline: none;
+  border-color: #8800FF;
+  box-shadow: 0 0 10px #8800ff99;
+}
+
+.checkingBoxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 32px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #333;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  width: 26px;
+  height: 26px;
+  background-color: #1f1f1f;
+  display: inline-block;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: #8800FF;
+  box-shadow: 0 0 10px #8800FF;
+}
+
+.reservation-form h5 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reservation-form h5 input {
+  background-color: #121212;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  width: 100px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.sub-btn {
+  margin-top: 2rem;
+}
+
+.sub-btn input[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background: linear-gradient(to right, #8800ff, #a100ff);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(136, 0, 255, 0.4);
+}
+
+.sub-btn input[type="submit"]:hover {
+  background-color: white;
+  color: #8800ff;
+  box-shadow: 0 0 30px rgba(136, 0, 255, 0.6);
+}
