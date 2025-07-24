@@ -1,6 +1,6 @@
 # 🎟️ Full-Stack Booking Platform – "BookMyVenue"
 
-**BookMyVenue** is a modern, full-stack venue reservation platform inspired by BookMyShow. It enables users to explore and book **restaurants**, **salons**, **concerts**, and **event venues**, while allowing **venue owners** to manage their listings and reservations.  
+**Wagon Vogue** is a modern, full-stack venue reservation platform inspired by BookMyShow. It enables users to explore and book **restaurants**, **salons**, **concerts**, and **event venues**, while allowing **venue owners** to manage their listings and reservations.  
 
 This application is built using **React.js** (frontend) and **Spring Boot** with **Hibernate ORM** (backend), and uses **MySQL** as the database. It follows a clean and scalable **RESTful architecture** and applies **MVC principles** for backend design.
 
